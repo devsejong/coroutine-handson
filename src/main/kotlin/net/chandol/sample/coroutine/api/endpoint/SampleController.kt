@@ -22,7 +22,7 @@ import java.util.concurrent.atomic.AtomicInteger
 class SampleController(
     val sampleRestClient: SampleRestClient
 ) {
-    // 일정 시간 delay 이후 결괏값 응답하는 coroutine handler
+    //webclient 호출 이후 결괏값 응답하는 coroutine handler
     @GetMapping("/hello")
     fun hello(@RequestParam param: String): Mono<ResponseEntity<String>> {
         return Mono.just(param)
