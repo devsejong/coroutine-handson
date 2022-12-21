@@ -8,10 +8,10 @@ import net.chandol.sample.coroutine.api.util.log
 // async를 사용해보자
 fun main() = runBlocking {
     val num1 = 100
-    Thread.sleep(1000)
+    delay(1000)
 
     val num2 = 200
-    Thread.sleep(1000)
+    delay(1000)
 
     val calc = num1 + num2
     log("$calc")

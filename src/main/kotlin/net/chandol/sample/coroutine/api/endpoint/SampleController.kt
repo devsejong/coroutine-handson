@@ -1,11 +1,5 @@
 package net.chandol.sample.coroutine.api.endpoint
 
-import kotlinx.coroutines.channels.ticker
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.flow.receiveAsFlow
-import kotlinx.coroutines.flow.take
 import mu.KotlinLogging
 import net.chandol.sample.coroutine.api.client.SampleRestClient
 import org.springframework.http.ResponseEntity
@@ -13,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 import reactor.core.publisher.Mono
-import java.util.concurrent.atomic.AtomicInteger
 
 // request -> netty(spring webflux -> coroutine) -> response
 // https://docs.spring.io/spring-framework/docs/current/reference/html/languages.html#coroutines

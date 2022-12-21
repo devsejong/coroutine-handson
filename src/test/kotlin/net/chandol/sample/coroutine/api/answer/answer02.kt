@@ -1,5 +1,3 @@
-@file:JvmName("AnswerKt")
-
 package net.chandol.sample.coroutine.api.answer
 
 import kotlinx.coroutines.delay
